@@ -1,3 +1,6 @@
+var records = require('./records');
+
+
 const { app, BrowserWindow } = require('electron')
 
 function createWindow () {
@@ -15,3 +18,9 @@ function createWindow () {
 }
 
 app.on('ready', createWindow)
+//tests
+//records.create("mine.txt","f"); 
+//records.rename("mine.txt","yours.txt");
+//records.create("mine","d"); 
+//records.eliminate('./mine',"d");
+//records.duplicate("yours.txt","./")
