@@ -1,4 +1,6 @@
 var records = require('./records');
+var utils = require('./utils');
+var fs = require('fs');
 
 
 const { app, BrowserWindow } = require('electron')
@@ -24,3 +26,9 @@ app.on('ready', createWindow)
 //records.create("mine","d"); 
 //records.eliminate('./mine',"d");
 //records.duplicate("yours.txt","./")
+
+//utils tests
+//const testFolder = '.';
+
+//utils.listfile(testFolder);
+//utils.listdir(testFolder);
