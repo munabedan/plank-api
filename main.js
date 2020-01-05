@@ -32,3 +32,10 @@ app.on('ready', createWindow)
 
 //utils.listfile(testFolder);
 //utils.listdir(testFolder);
+/*
+var path = require('path');
+const testFolder = '/test.tar.gz';
+ext=testFolder.split(".");
+ext.shift();
+
+console.log(ext);*/

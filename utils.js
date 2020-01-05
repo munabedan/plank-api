@@ -1,4 +1,6 @@
 var fs = require('fs');
+var path = require('path');
+
 
 var utils ={
     listdir: function(directory){
@@ -27,6 +29,13 @@ var utils ={
                 });
              });
         });
+    },
+
+    //returns an array of extension tags
+    getextension: function(filename){
+        ext=filename.split(".");
+        ext.shift();
+        console.log(ext);
     }
 }
 module.exports=utils
